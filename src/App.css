@@ -2,7 +2,6 @@
     width: 75%;
     margin: 0 auto;
     text-align: center;
-
 }
 .container h2 {
     margin: 0;
@@ -28,7 +27,6 @@
     background:black;
     color: rgb(62, 200, 241);
 }
-
 .video-js {
     margin: 0 auto;
     display: block;

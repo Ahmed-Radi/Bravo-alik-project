@@ -12,7 +12,7 @@ function App() {
     const poster = 'https://youtu.be/FjpGJaOlxZ0'
     let [count, countState] = useState(() => intiCount())
 
-    // function increamentCount() {
+    // function incrementCount() {
     //     countState(privCount => privCount + 1)
     // }
 
@@ -24,9 +24,9 @@ function App() {
     function reset() {
         countState(count = 10)
     }
-    let x;
+    let video;
     if (count === 0) {
-        x = <div className="video">
+        video = <div className="video">
                 <VideoPlayer
                     src = {videoSrc}
                     poster = {poster}
@@ -41,11 +41,11 @@ function App() {
         <div className="container">
             <h2>Decrease Number to Zero</h2>
             <div className="center">
-                {/* <button onClick={increamentCount} className="center__decrement-button">+</button> */}
+                {/* <button onClick={incrementCount} className="center__decrement-button">+</button> */}
                 <span className="center__count">{count}</span>
                 <button onClick={decrementCount} className="center__decrement-button">-</button>
             </div>
-            {x}
+            {video}
         </div>
     );
 }
